@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Contact for a Quote | Snagman.ie</title>
+<meta name="description" content="Contact Snagman.ie for a snagging quote: email info@snagman.ie with the property type, location and your closing date. Covering Munster and Connacht." />
+<link rel="icon" href="assets/mark.svg" type="image/svg+xml" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700;800;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header>
+  <div class="wrap header-in">
+    <a class="logo-link" href="index.html" aria-label="Snagman.ie home">
+      <img src="assets/mark.svg" alt="" />
+      <span class="wordmark">SNAGMAN<em>.IE</em></span>
+    </a>
+    <div class="header-right">
+      <nav id="siteNav">
+        <a href="index.html">Home</a>
+        <a href="what-is-snagging.html">What Is Snagging</a>
+        <a href="common-issues.html">Common Issues</a>
+        <a href="checklist.html">The Checklist</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html" class="active">Contact</a>
+      </nav>
+      <button class="menu-btn" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="siteNav"><span></span><span></span><span></span></button>
+      <a class="header-mail" href="mailto:info@snagman.ie">info@snagman.ie</a>
+      <a class="btn btn-amber btn-sm" href="contact.html">Get a Quote</a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <div class="page-hero">
+    <div class="wrap">
+      <div class="kicker">Contact</div>
+      <h1>Contact for a quote</h1>
+      <p>Snagging is quoted per property, based on its type, size and location. Send the details below and we will come back with a quote.</p>
+    </div>
+  </div>
+
+  <section>
+    <div class="wrap">
+      <div class="contact-grid">
+        <div class="contact-card">
+          <h3>Email us the property details</h3>
+          <p style="margin:10px 0 18px">The fastest way to a quote is an email with the property details listed on this page.</p>
+          <a class="mail-big" href="mailto:info@snagman.ie">info@snagman.ie</a>
+          <p style="margin-top:22px"><a class="btn btn-amber" href="mailto:info@snagman.ie?subject=Snagging%20quote%20request">Email for a Quote</a></p>
+          <p style="margin-top:18px">Covering Munster (Clare, Cork, Kerry, Limerick, Tipperary, Waterford) and Connacht (Galway, Leitrim, Mayo, Roscommon, Sligo).</p>
+        </div>
+        <div class="contact-side">
+          <h3>What to include in your email</h3>
+          <ol class="next-steps">
+            <li>The property type and size: house or apartment, and the number of bedrooms.</li>
+            <li>Where the property is: the estate or area, and the county.</li>
+            <li>Where you are in the process: when the builder expects to have it finished, and when you are due to close.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="mist">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="kicker">Not Sure Yet?</div>
+        <h2>Read these first</h2>
+      </div>
+      <div class="note-grid" style="margin-top:0">
+        <div class="note">
+          <h3>What snagging is</h3>
+          <p>What a snagging inspection covers, why it matters, and when to book it.</p>
+          <p style="margin-top:10px"><a class="more-link" href="what-is-snagging.html">What is snagging →</a></p>
+        </div>
+        <div class="note">
+          <h3>The checklist</h3>
+          <p>The room-by-room checklist the inspection works through, so you can see exactly what gets checked.</p>
+          <p style="margin-top:10px"><a class="more-link" href="checklist.html">See the checklist →</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap footer-in">
+    <div>
+      <div class="footer-brand">SNAGMAN<em>.IE</em></div>
+      <div class="footer-sub">Snagging inspections for new homes across Munster &amp; Connacht · <a href="mailto:info@snagman.ie">info@snagman.ie</a> · © 2026</div>
+      <div class="powered">Powered by <a href="https://moreydigital.ie" target="_blank" rel="noopener">Morey Digital</a></div>
+    </div>
+    <nav class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="what-is-snagging.html">What Is Snagging</a>
+      <a href="common-issues.html">Common Issues</a>
+      <a href="checklist.html">The Checklist</a>
+      <a href="services.html">Services</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var btn = document.querySelector('.menu-btn'), hdr = document.querySelector('header');
+  if (!btn || !hdr) return;
+  btn.addEventListener('click', function () {
+    var open = hdr.classList.toggle('open');
+    btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    btn.setAttribute('aria-label', open ? 'Close menu' : 'Open menu');
+  });
+  hdr.querySelectorAll('nav a').forEach(function (a) {
+    a.addEventListener('click', function () {
+      hdr.classList.remove('open');
+      btn.setAttribute('aria-expanded', 'false');
+      btn.setAttribute('aria-label', 'Open menu');
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
