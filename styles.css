@@ -43,6 +43,11 @@ nav a:hover{border-bottom-color:var(--amber)}
 nav a.active{border-bottom-color:var(--amber);color:var(--navy)}
 .header-mail{font-family:'Archivo',sans-serif;font-weight:700;font-size:.9rem;color:var(--navy);text-decoration:none;white-space:nowrap}
 .header-mail:hover{color:var(--amber-d)}
+.header-call{font-family:'Archivo',sans-serif;font-weight:800;font-size:.95rem;color:var(--navy);text-decoration:none;white-space:nowrap}
+.header-call:hover{color:var(--amber-d)}
+.contact-card .call-line{font-family:'Archivo',sans-serif;font-weight:700;font-size:1.05rem;color:var(--navy);margin-top:16px}
+.contact-card .call-line a{color:var(--navy);text-decoration:none}
+.contact-card .call-line a:hover{color:var(--amber-d)}
 .menu-btn{display:none;background:none;border:0;cursor:pointer;padding:10px 2px}
 .menu-btn span{display:block;width:24px;height:2px;background:var(--ink);margin:5px 0;transition:transform .18s ease,opacity .18s ease}
 header.open .menu-btn span:nth-child(1){transform:translateY(7px) rotate(45deg)}
@@ -55,7 +60,7 @@ header.open .menu-btn span:nth-child(3){transform:translateY(-7px) rotate(-45deg
   header.open nav a{padding:11px 0;border-bottom:1px solid var(--line)}
   header.open nav a:last-child{border-bottom:none}
 }
-@media (max-width:560px){ .header-mail{display:none} .header-right .btn{display:none} .logo-link img{height:38px;width:38px} .wordmark{font-size:1.15rem} }
+@media (max-width:560px){ .header-mail,.header-call{display:none} .header-right .btn{display:none} .logo-link img{height:38px;width:38px} .wordmark{font-size:1.15rem} }
 
 /* hero */
 .hero{background:var(--mist);border-bottom:1px solid var(--line)}
